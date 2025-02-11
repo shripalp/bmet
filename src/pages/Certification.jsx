@@ -43,7 +43,7 @@ function Certification() {
               rel="noopener noreferrer"
               className="text-blue-600"
             >
-              Certified Members List 1
+              Certified Members List 
             </a>
           </li>
           

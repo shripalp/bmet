@@ -7,6 +7,23 @@ function About() {
           Our mission is to maintain high standards and support professionals in their career growth.
           Email: bmetcertcanada@ncf.ca
         </p>
+        <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">Certification Program</h2>
+        <ul className="list-disc list-inside">
+          <li>
+            <a
+              href={import.meta.env.BASE_URL + "/documents/certification_program.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600"
+            >
+              Certificaton Program
+            </a>
+          </li>
+          
+        </ul>
+      </section>
+
       </div>
     );
   }

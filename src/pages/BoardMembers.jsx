@@ -30,7 +30,7 @@ function BoardMembers() {
             <tr>
               <th className="border p-2">Name</th>
               <th className="border p-2">Position</th>
-              <th className="border p-2">Email</th>
+              <th className="border p-2">Profile</th>
             </tr>
           </thead>
           <tbody>
@@ -38,7 +38,7 @@ function BoardMembers() {
               <tr key={index}>
                 <td className="border p-2">{member.Name}</td>
                 <td className="border p-2">{member.Position}</td>
-                <td className="border p-2">{member.Email}</td>
+                <td className="border p-2">{member.Profile}</td>
               </tr>
             ))}
           </tbody>
