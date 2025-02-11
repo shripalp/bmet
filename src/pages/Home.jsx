@@ -7,7 +7,7 @@ function Home() {
       <div className="relative text-black">
         {/* Hero Section */}
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
+          <h1 className="text-4xl md:text-4xl font-extrabold mb-4">
             Elevate Your Career with Professional Certification
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mb-6">
