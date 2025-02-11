@@ -1,6 +1,6 @@
 function Home() {
     return (
-      <div className="relative bg-gray-900 text-white">
+      <div className="relative bg-red-900 text-white">
         {/* Hero Section */}
         <div className="relative h-screen flex flex-col items-center justify-center text-center px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4">

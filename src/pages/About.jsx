@@ -5,6 +5,7 @@ function About() {
         <p>
           We are dedicated to providing certification for biomedical and dialysis technicians in Canada.
           Our mission is to maintain high standards and support professionals in their career growth.
+          Email: bmetcertcanada@ncf.ca
         </p>
       </div>
     );
