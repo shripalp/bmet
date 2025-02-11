@@ -5,7 +5,7 @@ function BoardMembers() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    fetch('/documents/board_members.xlsx')
+    fetch(import.meta.env.BASE_URL + '/documents/board_members.xlsx')
       .then((res) => res.arrayBuffer())
       .then((data) => {
         const workbook = XLSX.read(data, { type: 'array' });

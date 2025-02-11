@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 function Certification() {
   return (
@@ -11,7 +11,7 @@ function Certification() {
         <ul className="list-disc list-inside">
           <li>
             <a
-              href="/documents/application_form.pdf"
+              href={import.meta.env.BASE_URL + "/documents/application_form.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600"
@@ -21,7 +21,7 @@ function Certification() {
           </li>
           <li>
             <a
-              href="/documents/renewal_form.pdf"
+              href={import.meta.env.BASE_URL + "/documents/renewal_form.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600"
@@ -38,7 +38,7 @@ function Certification() {
         <ul className="list-disc list-inside">
           <li>
             <a
-              href="/documents/certified_members_1.pdf"
+              href={import.meta.env.BASE_URL + "/documents/certified_members_1.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600"
@@ -56,7 +56,7 @@ function Certification() {
         <ul className="list-disc list-inside">
           <li>
             <a
-              href="/documents/biomedical_study_guide.pdf"
+              href={import.meta.env.BASE_URL + "/documents/biomedical_study_guide.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600"
@@ -66,7 +66,7 @@ function Certification() {
           </li>
           <li>
             <a
-              href="/documents/dialysis_study_guide.pdf"
+              href={import.meta.env.BASE_URL + "/documents/dialysis_study_guide.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600"
