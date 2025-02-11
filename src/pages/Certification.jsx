@@ -46,16 +46,7 @@ function Certification() {
               Certified Members List 1
             </a>
           </li>
-          <li>
-            <a
-              href="/documents/certified_members_2.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600"
-            >
-              Certified Members List 2
-            </a>
-          </li>
+          
         </ul>
       </section>
 
