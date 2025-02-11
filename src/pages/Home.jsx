@@ -1,3 +1,7 @@
+
+import { Link } from "react-router-dom";
+
+
 function Home() {
     return (
       <div className="relative text-black">
@@ -10,18 +14,18 @@ function Home() {
             Get certified as a biomedical or dialysis technician in Canada and stand out in your field.
           </p>
           <div className="flex space-x-4">
-            <a
-              href={import.meta.env.BASE_URL + "certification"}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
-            >
-              Get Certified
-            </a>
-            <a
-              href={import.meta.env.BASE_URL + "contact"}
-              className="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
-            >
-              Contact Us
-            </a>
+          <Link
+            to="certification"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+          >
+            Get Certified
+          </Link>
+          <Link
+            to="contact"
+            className="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+          >
+            Contact Us
+          </Link>
           </div>
         </div>
   

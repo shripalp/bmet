@@ -5,6 +5,24 @@ function Certification() {
     <div>
       <h1 className="text-3xl font-bold mb-4">Certification</h1>
 
+       {/* Program Brochure */}
+       <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">Certification Brochure</h2>
+        <ul className="list-disc list-inside">
+          <li>
+            <a
+              href={import.meta.env.BASE_URL + "/documents/certification_brochure.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600"
+            >
+              Download Certification Brochure
+            </a>
+          </li>
+          
+        </ul>
+      </section>
+
       {/* Downloadable Forms */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">Forms</h2>

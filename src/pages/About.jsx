@@ -3,11 +3,11 @@ function About() {
       <div>
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
         <p>
-          We are dedicated to providing certification for biomedical and dialysis technicians in Canada.
+          We are dedicated to providing certification for biomedical and dialysis technologists and technicians in Canada.
           Our mission is to maintain high standards and support professionals in their career growth.
           Email: bmetcertcanada@ncf.ca
         </p>
-        <section className="mb-8">
+        <section className=" mt-8 mb-8">
         <h2 className="text-2xl font-semibold mb-2">Certification Program</h2>
         <ul className="list-disc list-inside">
           <li>
@@ -17,7 +17,7 @@ function About() {
               rel="noopener noreferrer"
               className="text-blue-600"
             >
-              Certificaton Program
+              Download Certificaton Program
             </a>
           </li>
           
