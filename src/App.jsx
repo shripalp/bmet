@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import Footer from "./components/Footer"; // Import Footer
 import Home from './pages/Home';
 import Certification from './pages/Certification';
 import BoardMembers from './pages/BoardMembers';
@@ -20,6 +21,7 @@ function App() {
           <Route path={import.meta.env.BASE_URL + "contact"} element={<Contact />} />
         </Routes>
       </div>
+      <Footer /> {/* Add Footer component here */}
     </Router>
   );
 }
