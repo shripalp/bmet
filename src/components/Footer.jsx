@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-6 mt-12">
+    <footer className="bg-red-800 text-white py-6 mt-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           
@@ -64,8 +64,7 @@ function Footer() {
                   bmetcertcanada@ncf.ca
                 </a>
               </li>
-              <li>📍 Address: Toronto, ON, Canada</li>
-              <li>📞 Phone: +1 (555) 123-4567</li>
+              
             </ul>
           </div>
         </div>
