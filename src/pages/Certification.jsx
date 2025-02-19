@@ -38,14 +38,7 @@ function Certification() {
               >
                 📄 Download Application Form
               </a>
-              <a
-                href={import.meta.env.BASE_URL + "documents/renewal_form.pdf"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-yellow-600 hover:bg-yellow-700 text-white py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center justify-center"
-              >
-                📄 Download Renewal Form
-              </a>
+             
             </div>
           </section>
   
