@@ -49,12 +49,7 @@ function About() {
             <p className="text-lg text-gray-700">
               Have questions? We’re here to help. Feel free to reach out to us for more information.
             </p>
-            <a
-              href={import.meta.env.BASE_URL + "contact"}
-              className="bg-gray-700 hover:bg-gray-800 text-white py-3 px-6 rounded-lg shadow-md transition duration-300 inline-block mt-4"
-            >
-              📩 Contact Us
-            </a>
+           
           </section>
         </div>
       </div>
