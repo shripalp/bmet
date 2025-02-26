@@ -1,60 +1,92 @@
+import { useState } from "react";
+
 function About() {
-    return (
-      <div className="bg-gray-100 min-h-screen">
-        {/* Hero Section */}
-        <div className="relative bg-cover bg-center h-64 flex flex-col items-center justify-center text-center text-black px-6"
-             style={{ backgroundImage: "url('/documents/about_banner.jpg')" }}>
-          <h1 className="text-4xl font-bold">About Us</h1>
-          <p className="text-lg mt-2 max-w-2xl">
-            Empowering Biomedical and Dialysis Professionals with Trusted Certifications.
-          </p>
-        </div>
-  
-        {/* Main Content */}
-        <div className="max-w-5xl mx-auto p-6 bg-white shadow-lg mt-6 rounded-lg">
-          
-          {/* Mission & Vision Section */}
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Our Mission</h2>
-            <p className="text-lg text-gray-700">
-              We are committed to providing high-quality certification for biomedical and dialysis technologists and technicians in Canada.
-              Our goal is to maintain high standards and support professionals in their career growth.
-            </p>
-          </section>
-  
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Our Vision</h2>
-            <p className="text-lg text-gray-700">
-              We aim to be the leading certification body, ensuring that healthcare technology professionals meet industry standards 
-              and contribute to excellence in patient care.
-            </p>
-          </section>
-  
-          {/* Certification Program Section */}
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Certification Program</h2>
+  const [selectedTab, setSelectedTab] = useState("bmet");
+
+  return (
+    <div className="bg-gray-100 min-h-screen flex">
+      {/* Sidebar Section */}
+      <aside className="w-1/4 bg-gray-900 text-white p-6 hidden md:block">
+        <h2 className="text-xl font-bold mb-4">Downloads</h2>
+        <ul className="space-y-3">
+          <li>
             <a
-              href={import.meta.env.BASE_URL + "documents/certification_program.pdf"}
+              href="/documents/certification_program.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg shadow-md transition duration-300 inline-block"
+              className="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg shadow-md transition duration-300"
             >
-              📄 Download Certification Program
+              📄 Certification Program
             </a>
-          </section>
-  
-          {/* Contact Section */}
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Get in Touch</h2>
-            <p className="text-lg text-gray-700">
-              Have questions? We’re here to help. Feel free to reach out to us for more information.
-            </p>
-           
-          </section>
+          </li>
+          
+        </ul>
+      </aside>
+
+      {/* Main Content */}
+      <div className="w-full md:w-3/4 p-6 bg-white shadow-lg rounded-lg">
+        {/* Toggle Buttons */}
+        <div className="flex justify-center space-x-4 mb-6">
+          <button
+            onClick={() => setSelectedTab("bmet")}
+            className={`py-2 px-6 font-semibold rounded-lg transition duration-300 ${
+              selectedTab === "bmet" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+            }`}
+          >
+            Biomedical Certification History
+          </button>
+          <button
+            onClick={() => setSelectedTab("dialysis")}
+            className={`py-2 px-6 font-semibold rounded-lg transition duration-300 ${
+              selectedTab === "dialysis" ? "bg-green-600 text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+            }`}
+          >
+            Dialysis Certification History
+          </button>
         </div>
+
+        {/* BMET Certification History Content */}
+        {selectedTab === "bmet" && (
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Biomedical Technician Certification History</h2>
+            <iframe
+              src="/documents/BMET_Cert_History.pdf"
+              className="w-full h-[600px] border border-gray-300 rounded-lg shadow-md"
+            ></iframe>
+            <p className="text-center text-gray-600 mt-2">
+              If the document does not load, 
+              <a 
+                href="/documents/BMET_Cert_History.pdf" 
+                className="text-blue-500 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              > click here to download.</a>
+            </p>
+          </div>
+        )}
+
+        {/* Dialysis Certification History Content */}
+        {selectedTab === "dialysis" && (
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Dialysis Technician Certification History</h2>
+            <iframe
+              src="/documents/Dialysis_Cert_History.pdf"
+              className="w-full h-[600px] border border-gray-300 rounded-lg shadow-md"
+            ></iframe>
+            <p className="text-center text-gray-600 mt-2">
+              If the document does not load, 
+              <a 
+                href="/documents/Dialysis_Certification_History.pdf" 
+                className="text-blue-500 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              > click here to download.</a>
+            </p>
+          </div>
+        )}
       </div>
-    );
-  }
-  
-  export default About;
-  
+    </div>
+  );
+}
+
+export default About;
