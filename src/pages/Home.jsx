@@ -22,7 +22,7 @@ function Home() {
       {/* Hero Section */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-6 mb-8 mt-8">
         <h1 className="text-4xl md:text-4xl font-extrabold mb-4">
-          Elevate Your Career with Professional Certification
+          Elevate Your Career with Professional Certification!
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mb-6">
           Get certified as a biomedical or dialysis technician in Canada and stand out in your field.
