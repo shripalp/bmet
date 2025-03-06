@@ -25,7 +25,7 @@ function Home() {
           Elevate Your Career with Professional Certification!
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mb-6">
-          Get certified as a biomedical or dialysis technician in Canada and stand out in your field.
+          Get certified as a biomedical or dialysis technician in Canada and stand out in your field!!
         </p>
         <div className="flex space-x-4">
           <Link
