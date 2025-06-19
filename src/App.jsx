@@ -7,6 +7,7 @@ import Certification from './pages/Certification';
 import BoardMembers from './pages/BoardMembers';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Upload from './pages/Upload';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path={import.meta.env.BASE_URL + "board-members"} element={<BoardMembers />} />
           <Route path={import.meta.env.BASE_URL + "about"}element={<About />} />
           <Route path={import.meta.env.BASE_URL + "contact"} element={<Contact />} />
+          <Route path={import.meta.env.BASE_URL + "upload"} element={<Upload />} />
+          {/* Add more routes as needed */}
         </Routes>
       </div>
       <Footer /> {/* Add Footer component here */}
