@@ -24,7 +24,7 @@ function Navigation() {
             <NavLink to="board-members">Board Members</NavLink>
             <NavLink to="about">About Us</NavLink>
             <NavLink to="contact">Contact Us</NavLink>
-            <NavLink to="upload">Upload</NavLink>
+           
           </div>
 
           {/* Mobile Menu Button */}
@@ -67,7 +67,7 @@ function Navigation() {
             <MobileNavLink to="board-members" onClick={toggleMenu}>Board Members</MobileNavLink>
             <MobileNavLink to="about" onClick={toggleMenu}>About Us</MobileNavLink>
             <MobileNavLink to="contact" onClick={toggleMenu}>Contact Us</MobileNavLink>
-            <MobileNavLink to="upload" onClick={toggleMenu}>Upload</MobileNavLink>
+           
           </div>
         </div>
       )}
