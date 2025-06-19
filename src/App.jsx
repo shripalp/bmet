@@ -1,7 +1,7 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Footer from "./components/Footer"; // Import Footer
+import Footer from "./components/Footer";
 import Home from './pages/Home';
 import Certification from './pages/Certification';
 import BoardMembers from './pages/BoardMembers';
@@ -11,22 +11,22 @@ import Upload from './pages/Upload';
 
 function App() {
   return (
-    <Router>
+    <>
       <Navigation />
       <div className="container mx-auto p-4">
-      <Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/certification" element={<Certification />} />
-  <Route path="/board-members" element={<BoardMembers />} />
-  <Route path="/about" element={<About />} />
-  <Route path="/contact" element={<Contact />} />
-  <Route path="/upload" element={<Upload />} />
-</Routes>
-
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/certification" element={<Certification />} />
+          <Route path="/board-members" element={<BoardMembers />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/upload" element={<Upload />} />
+        </Routes>
       </div>
-      <Footer /> {/* Add Footer component here */}
-    </Router>
+      <Footer />
+    </>
   );
 }
 
 export default App;
+
