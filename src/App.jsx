@@ -14,15 +14,15 @@ function App() {
     <Router>
       <Navigation />
       <div className="container mx-auto p-4">
-        <Routes>
-          <Route path= {import.meta.env.BASE_URL + "/"} element={<Home />} />
-          <Route path={import.meta.env.BASE_URL + "certification"} element={<Certification />} />
-          <Route path={import.meta.env.BASE_URL + "board-members"} element={<BoardMembers />} />
-          <Route path={import.meta.env.BASE_URL + "about"}element={<About />} />
-          <Route path={import.meta.env.BASE_URL + "contact"} element={<Contact />} />
-          <Route path={import.meta.env.BASE_URL + "upload"} element={<Upload />} />
-          {/* Add more routes as needed */}
-        </Routes>
+      <Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/certification" element={<Certification />} />
+  <Route path="/board-members" element={<BoardMembers />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+  <Route path="/upload" element={<Upload />} />
+</Routes>
+
       </div>
       <Footer /> {/* Add Footer component here */}
     </Router>
