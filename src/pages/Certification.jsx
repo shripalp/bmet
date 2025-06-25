@@ -46,15 +46,16 @@ function Certification() {
               rel="noopener noreferrer"
               className="block bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg shadow-md transition duration-300"
             >
-              📖 Biomedical Study Guide
+              📖 Biomedical Study Guide 
             </a>
           </li>
-          <li>
+          <li hidden>
             <a
               href={import.meta.env.BASE_URL + "documents/dialysis_study_guide.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg shadow-md transition duration-300"
+              
             >
               📖 Dialysis Study Guide
             </a>
