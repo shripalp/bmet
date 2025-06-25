@@ -39,7 +39,7 @@ function Certification() {
               📜 Certified Members List
             </a>
           </li>
-          <li>
+          <li hidden>
             <a
               href={import.meta.env.BASE_URL + "documents/biomedical_study_guide.pdf"}
               target="_blank"
